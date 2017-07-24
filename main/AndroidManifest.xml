@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.ti_ti.imobiliaria">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/iconcasa"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".view.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".view.GravarImovelActivity" />
+        <activity android:name=".view.ListaActivity" />
+        <activity android:name=".view.LoginActivity" />
+        <activity android:name=".view.OpcoesAdminActivity" />
+        <activity android:name=".view.UsuImovelActivity" />
+        <activity android:name=".view.PesquisaActivity" />
+        <activity android:name=".view.AdminImovelActivity"></activity>
+    </application>
+
+</manifest>

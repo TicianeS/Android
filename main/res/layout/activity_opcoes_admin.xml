@@ -1,0 +1,109 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:background="@drawable/fundo"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Portal dos Imóveis"
+            android:textSize="35sp"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:gravity="center_horizontal"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="9"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="4"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Localizar um imóvel"
+                android:textSize="35sp"
+                android:textColor="#f18818"
+                android:gravity="center"/>
+            <EditText
+                android:id="@+id/edtPesqAdmin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Bairro"
+                android:padding="25dp"
+                android:textSize="30sp"
+                android:gravity="center"/>
+            <Button
+                android:id="@+id/btnPesqAdmin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pesquisar"
+                android:background="#ffffff"
+                android:textColor="#f18818"
+                android:textSize="30sp"
+                android:onClick="btnPesqAdminClick"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/btnCadastrar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cadastrar imóveis"
+                android:textSize="30sp"
+                android:background="#ffffff"
+                android:textColor="#f1c606"
+                android:onClick="btnCadastrarClick"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/btnListar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Listar imóveis"
+                android:textSize="30sp"
+                android:background="#ffffff"
+                android:textColor="#f1c606"
+                android:onClick="btnListarClick"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>
+
